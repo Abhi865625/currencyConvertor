@@ -12,3 +12,7 @@ Currently, two official plugins are available:
 ![image](https://github.com/Abhi865625/currencyConvertor/assets/93569162/dcb76496-f6b5-4939-8e2a-0667c75d927c)
 
 
+https://github.com/Abhi865625/currencyConvertor/assets/93569162/edd15b6d-e917-4c71-a903-029df4befddf
+
+
+
