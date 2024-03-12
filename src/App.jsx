@@ -25,13 +25,28 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen flex flex-col md:flex-row justify-center items-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage: `url('https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VycmVuY3l8ZW58MHx8MHx8fDA%3D')`,
       }}
     >
-      <div className="w-full">
-        <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+      <div className="md:w-1/2 flex justify-center">
+        <div
+          className="flex justify-center items-center relative"
+          style={{ maxWidth: "90%" }}
+        >
+          <img
+            src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VycmVuY3l8ZW58MHx8MHx8fDA%3D"
+            alt="Currency"
+            style={{ width: "100%", height: "auto", maxWidth: "500px" }}
+          />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-green-200 text-xl bg-gradient-to-r from-gray-900 to-blue-700 font-bold border rounded-xl p-4">
+            Currency Converter
+          </div>
+        </div>
+      </div>
+      <div className="md:w-1/2 flex justify-center">
+        <div className="max-w-md border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();
